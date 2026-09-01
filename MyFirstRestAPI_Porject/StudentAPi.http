@@ -1,6 +1,53 @@
 @StudentAPi_HostAddress = http://localhost:5215
+@StudentId = 1
 
-GET {{StudentAPi_HostAddress}}/Students/
+GET {{StudentAPi_HostAddress}}/health
 Accept: application/json
+
+###
+
+GET {{StudentAPi_HostAddress}}/api/students
+Accept: application/json
+
+###
+
+GET {{StudentAPi_HostAddress}}/api/students/{{StudentId}}
+Accept: application/json
+
+###
+
+GET {{StudentAPi_HostAddress}}/api/students/passed
+Accept: application/json
+
+###
+
+GET {{StudentAPi_HostAddress}}/api/students/average-grade
+Accept: application/json
+
+###
+
+POST {{StudentAPi_HostAddress}}/api/students
+Content-Type: application/json
+
+{
+  "name": "Mohammad",
+  "age": 23,
+  "grade": 90
+}
+
+###
+
+PUT {{StudentAPi_HostAddress}}/api/students/{{StudentId}}
+Content-Type: application/json
+
+{
+  "name": "Mohammad Abdelfattah",
+  "age": 23,
+  "grade": 95
+}
+
+###
+
+DELETE {{StudentAPi_HostAddress}}/api/students/{{StudentId}}
 
 ###
