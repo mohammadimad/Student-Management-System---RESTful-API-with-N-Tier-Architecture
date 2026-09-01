@@ -1,3 +1,5 @@
+**English** | [العربية](README.ar.md)
+
 # Student Management System API
 
 A complete educational RESTful API built with ASP.NET Core and a three-tier architecture. It manages student records through a clean HTTP layer, business services, and an asynchronous ADO.NET repository backed by SQL Server stored procedures.
